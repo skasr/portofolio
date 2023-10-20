@@ -1,67 +1,96 @@
-body {
-    margin: 0;
-    padding: 0;
-    font: 12px Arial;
+body{
+  font-family:lato;
 }
 
-.menu {
-    height: 150px;
-    list-style: none;
-    padding: 50px;
-    margin: 40px;
+.container{
+  margin-top:3em;
 }
 
-.menu li {
-    float: left;
-    width: 200px;
+.alpha{
+  vertical-align: middle;
 }
 
-.menu li a:link, .menu li a:visited {
-    display: block;
-    color: #FFF;
-    background: #293245;
-    padding: 6px 10px;
-    border-right: 1px solid #FFF;
-    text-align: center;
-    text-decoration: none;
+.row{
+  margin-bottom:3em;
 }
 
-.menu li a:hover {background-color: #199BD2;}
-.menu li a:active {background-color: #808080;}
-
-.menu .sousmenu {
-    list-style-type: none;
-    display: none;
-    padding: 0;
-    margin: 0;
-    position: absolute;
+#header h1{
+  text-transform:uppercase;
+  font-weight:800;
+  color: #3e53a6;
+  margin-bottom: 0.85em;
 }
 
-.menu .sousmenu li {
-    float: none;
-    margin: 0;
-    padding: 0;
-    border-top: 1px solid transparent;
-    border-right: 1px solid transparent;
+#outer{
+  border: 1px solid #CCC;
+  width: 100vw;
 }
 
-.menu .sousmenu li a:link, .menu li a:visited {
-    display: block;
-    color: #FFF;
-    text-decoration: none;
-    background-color: #808080;
+thead{
+  background: #3e53a6;
+  color: #FFF;
+  height: 50px;
+  text-transform:uppercase;
+  padding-bottom: 1rem;
 }
 
-.menu .sousmenu li a:hover {
-    background-color: #199BD2;
+tfoot{
+  background: #3e53a6;
+  color: #FFF;
+  height: 50px;
+  text-transform:uppercase;
+  font-weight:800;
+}
+tr{
+  min-height: 100px;
 }
 
-.menu li:hover .sousmenu {
-    display: block;
+.nomModule{
+  padding-top:1rem;
 }
-    
 
-h1 {
+td{
+  padding:1rem;
+}
 
-    margin-bottom: 0px;
+input{
+  display:block;
+  border: none;
+  border-bottom:2px solid #CCC;
+  border-radius: 25px;
+  margin-left:auto;
+  margin-right:auto;
+  float:none;
+}
+
+.mainRow{
+  border-bottom:1px solid #EEE;
+}
+/*fix this shit*//*FIXED!*/
+.mainRow:nth-child(even){
+  background-color:#EEE;
+}
+
+.no-spinners {
+  -moz-appearance:textfield;
+  margin-left: auto;
+  margin-right: auto;
+  float:none;
+}
+
+.no-spinners::-webkit-outer-spin-button,
+.no-spinners::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.alter{
+  padding-left: 3em;
+  padding-right: auto;
+}
+
+#footer h3{
+  color: #3e53a6;
+  text-decoration:underline;
+  font-weight: bold;
 }
